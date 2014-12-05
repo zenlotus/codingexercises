@@ -82,7 +82,7 @@ public class Solutions {
 			}else{
 				node = stack.pop();
 				res.add(node);
-				stack.push(node.right);
+				node = node.right;
 			}
 		}
 		
@@ -103,8 +103,23 @@ public class Solutions {
 		
 		
 		
+		for(TreeNode node: InOrderTraversal(root)){
+			System.out.print(node.val+" ");
+		}
+		System.out.println();
+		for(TreeNode node: InOrderTraversalIterative(root)){
+			System.out.print(node.val+" ");
+		}
+		System.out.println();
 		
 		
+		TreeNode head = transform(root,null,null);
+		
+		while(head!=null){
+			System.out.print(head.val+" ");
+			head = head.right;
+		}
+		System.out.println();
 		
 
 //		System.out.println(-8%2);
