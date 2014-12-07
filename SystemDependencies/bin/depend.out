@@ -1,0 +1,89 @@
+COMPONENT TELNET
+COMPONENT TCPIP
+COMPONENT NETCARD
+COMPONENT DNS
+COMPONENT BROWSER
+COMPONENT HTML
+COMPONENT foo
+DEPEND TELNET TCPIP
+DEPEND TELNET NETCARD
+DEPEND TCPIP NETCARD
+DEPEND DNS TCPIP
+DEPEND DNS NETCARD
+DEPEND BROWSER TCPIP
+DEPEND BROWSER HTML
+DEPEND Foo HTML
+   Foo is undeclared.
+LIST
+LISTCOMP TCPIP
+   Component TCPIP:
+      Not Installed
+      Requirements:
+         NETCARD
+      Dependencies:
+         BROWSER
+         DNS
+         TELNET
+INSTALL Foo
+   Foo is undeclared.
+REMOVE Foo
+   Foo is undeclared.
+LISTCOMP Foo
+   Foo is undeclared.
+INSTALL TELNET
+   Installing NETCARD
+   Installing TCPIP
+   Installing TELNET
+INSTALL TCPIP
+INSTALL foo
+   Installing foo
+REMOVE NETCARD
+   NETCARD is still needed by TCPIP
+INSTALL BROWSER
+   Installing HTML
+   Installing BROWSER
+INSTALL DNS
+   Installing DNS
+LIST
+   BROWSER
+   HTML
+   TCPIP
+   foo
+   DNS
+   TELNET
+   NETCARD
+LISTCOMP TELNET
+   Component TELNET:
+      Installed
+      Requirements:
+         TCPIP
+         NETCARD
+      Dependencies:
+REMOVE TELNET
+   Removing TELNET
+REMOVE DNS
+   Removing DNS
+REMOVE BROWSER
+   Removing BROWSER
+REMOVE TCPIP
+   Removing TCPIP
+REMOVE NETCARD
+   Removing NETCARD
+LISTCOMP TCPIP
+   Component TCPIP:
+      Not Installed
+      Requirements:
+         NETCARD
+      Dependencies:
+         BROWSER
+         DNS
+         TELNET
+LIST
+   HTML
+   foo
+REMOVE HTML
+   Removing HTML
+REMOVE foo
+   Removing foo
+LIST
+END

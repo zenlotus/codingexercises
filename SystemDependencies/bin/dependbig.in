@@ -1,0 +1,82 @@
+COMPONENT RightSock
+COMPONENT LeftSock
+COMPONENT RightShoe
+COMPONENT LeftShoe
+COMPONENT Watch
+COMPONENT Underpants
+COMPONENT Undershirt
+COMPONENT Pants
+COMPONENT Shirt
+COMPONENT Glasses
+COMPONENT Coat
+COMPONENT Hat
+COMPONENT RightGlove
+COMPONENT LeftGlove
+COMPONENT Bookbag
+COMPONENT InPublic
+COMPONENT Outdoors
+COMPONENT InClass
+DEPEND Coat Shirt
+DEPEND RightShoe RightSock
+DEPEND LeftShoe LeftSock
+DEPEND Pants Underpants
+DEPEND Shirt Undershirt
+DEPEND InPublic Pants
+DEPEND InPublic Shirt
+DEPEND Outdoors InPublic
+DEPEND Outdoors RightShoe
+DEPEND Outdoors LeftShoe
+DEPEND Outdoors Coat
+DEPEND Outdoors Hat
+DEPEND Outdoors RightGlove
+DEPEND Outdoors LeftGlove
+DEPEND InClass InPublic
+DEPEND InClass Bookbag
+DEPEND InClass Watch
+DEPEND InClass Glasses
+DEPEND InClass Sleep
+LISTCOMP Outdoors
+LISTCOMP InClass
+LISTCOMP InPublic
+INSTALL Watch
+INSTALL Outdoors
+INSTALL Bookbag
+INSTALL InClass
+INSTALL Outdoors
+LIST
+REMOVE Outdoors
+REMOVE Coat
+REMOVE Hat
+REMOVE RightGlove
+REMOVE LeftGlove
+REMOVE Underpants
+REMOVE InClass
+REMOVE Underpants
+LIST
+INSTALL Outdoors
+REMOVE Outdoors
+LIST
+REMOVE Coat
+REMOVE Hat
+REMOVE RightGlove
+REMOVE LeftGlove
+REMOVE Bookbag
+REMOVE Watch
+REMOVE Shirt
+REMOVE InPublic
+LIST
+REMOVE Shirt
+REMOVE Underpants
+REMOVE Pants
+REMOVE Underpants
+REMOVE Undershirt
+REMOVE RightSock
+REMOVE RightShoe
+REMOVE RightSock
+REMOVE LeftShoe
+REMOVE LeftSock
+LIST
+REMOVE Glasses
+LISTCOMP Sleep
+INSTALL Sleep
+END
